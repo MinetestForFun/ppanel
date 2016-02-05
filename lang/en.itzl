@@ -1,0 +1,37 @@
+{
+	"mff.ppanel.title": "PPanel",
+	"mff.ppanel.titleFmt": "PPanel - %s",
+
+	"mff.ppanel.logon.title": "PPanel Logon",
+	"mff.ppanel.logon.pageTitle": "Logon",
+	"mff.ppanel.logon.nickPlaceholder": "Nickname",
+	"mff.ppanel.logon.passwdPlaceholder": "Password",
+
+	"mff.servers.cl.name": "Classic",
+	"mff.servers.hg.name": "Hunger Games",
+	"mff.servers.sb.name": "Skyblock",
+	"mff.servers.cr.name": "Creative",
+
+	"mff.ppanel.accountIs": "Account: %s",
+
+	"mff.ppanel.pages.overview.pageTitle": "Overview",
+	"mff.ppanel.pages.overview.title": "Overview",
+	"mff.ppanel.pages.overview.nGameAccounts": "%d game accounts",
+	"mff.ppanel.pages.overview.acctable.server": "Server",
+	"mff.ppanel.pages.overview.acctable.nick": "Nickname",
+	"mff.ppanel.pages.overview.acctable.lastSeen": "Last seen",
+	"mff.ppanel.pages.overview.acctable.timeOnline": "Time online",
+	"mff.ppanel.pages.overview.acctable.dhms": "D:h:m:s",
+	"mff.ppanel.pages.overview.acctable.lastSeenFormat": "%e %b %Y %H:%M:%S",
+
+	"mff.ppanel.pages.addacc.pageTitle": "Add/merge account",
+	"mff.ppanel.pages.addacc.title": "Add/merge account",
+	"mff.ppanel.pages.addacc.explanation": "Here you can add in-game accounts to this PPanel account.<br>For game accounts that aren't linked to a PPanel one, they'll directly be added.<br>For accounts that are already bound to a PPanel one, said panel account will be merged with the current one.",
+	"mff.ppanel.pages.addacc.error": "An error occured.",
+	"mff.ppanel.pages.addacc.added": "Account was added successfully.",
+	"mff.ppanel.pages.addacc.addedMerge": "Account was added successfully, merging from account %s.",
+	"mff.ppanel.pages.addacc.alreadyAdded": "Account is already bound to this panel account.",
+
+	"mff.ppanel.pages.skin.pageTitle": "Skin",
+	"mff.ppanel.pages.skin.title": "Change skin"
+}

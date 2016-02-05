@@ -1,0 +1,9 @@
+{
+	"itzrMinVersion": 0.1,
+	"languages": {
+		"en": {
+			"LC_TIME": "en_US",
+			"itzl": "en.itzl"
+		}
+	 }
+}

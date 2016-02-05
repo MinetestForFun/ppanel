@@ -1,0 +1,10 @@
+{ "servers": [ 
+	{ "id": 1, "name": "Classic", "itzrName": "mff.servers.cl.name", "host": "qbuissondebon.info", "port": 30000,
+	  "shortName": "Cl", "color": "hsl(0, 50%, 50%)", "worldpath": "/media/source/MFF/ppanel/testworld", "pageTags": ["skins"] },
+	{ "id": 2, "name": "Hunger Games", "itzrName": "mff.servers.hg.name", "host": "qbuissondebon.info", "port": 30000,
+	  "shortName": "Hg", "color": "hsl(90, 50%, 45%)", "worldpath": "/media/source/MFF/ppanel/testworld", "pageTags": [] },
+	{ "id": 3, "name": "Skyblock", "itzrName": "mff.servers.sb.name", "host": "qbuissondebon.info", "port": 30000,
+	  "shortName": "Sb", "color": "hsl(220, 60%, 50%)", "worldpath": "/media/source/MFF/ppanel/testworld", "pageTags": [] },
+	{ "id": 4, "name": "Creative", "itzrName": "mff.servers.cr.name", "host": "qbuissondebon.info", "port": 30000,
+	  "shortName": "Cr", "color": "hsl(270, 60%, 50%)", "worldpath": "/media/source/MFF/ppanel/testworld", "pageTags": [] }
+]}

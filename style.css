@@ -1,0 +1,297 @@
+@import url("fonts/fonts.css");
+
+body {
+  margin: 0;
+  background: url("img/bg_noise.png"), #252D35;
+  font-family: Roboto, sans-serif;
+}
+
+body.panelPage {
+  margin-left: 20em;
+}
+
+.center {
+  text-align: center;
+}
+
+div.logon {
+  background-color: hsl(100, 40%, 40%);
+  box-shadow: 0 0 1em #000;
+}
+
+.logotype {
+  font-size: 2.5em;
+  margin: .3em 0 .2em 0;
+  color: #FFF;
+  text-shadow: 0 0 .3em #000, 0 0 .05em #000;
+}
+.logotype img {
+  width: 1.3em;
+  height: 1.3em;
+  vertical-align: top;
+}
+
+div.logon.bar {
+  position: absolute;
+  display: block;
+  left: 0; right: 0;
+  top: 50%;
+  height: 14em;
+  margin-top: -7em;
+  text-align: center;
+}
+div.logon.bar>form {
+  display: block;
+
+}
+
+.logon .servers {
+  padding-bottom: .5em;
+}
+.logon .servers input {
+  display: none;
+}
+.logon .servers label {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  font-size: 1.3em;
+  text-align: center;
+  width: 2em;
+  height: 2em;
+  line-height: 2em; /* Centers text vertically */
+  box-shadow: 0 0 0 .1em rgba(255, 255, 255, 0.2) inset;
+  border: .1em solid rgba(0, 0, 0, .5);
+
+  transition: width .4s ease;
+}
+.logon .servers label>span {
+  transition: color .4s ease;
+}
+.logon .servers label>div{
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity .4s ease;
+}
+.logon .servers input:checked + label {
+  cursor: default;
+  width: 10em;
+}
+.logon .servers input:checked + label>span {
+  color: transparent;
+  transition: color .4s ease .4s;
+}
+.logon .servers input:checked + label>div {
+  opacity: 1;
+  transition: opacity .4s ease .4s;
+}
+
+.logon .forms {
+  display: inline-block;
+  vertical-align: top;
+}
+.logon .forms>input {
+  display: block;
+  background-color: #EEE;
+  color: #000;
+  font-size: 1.5em;
+  width: 11em;
+  border: .1em solid #555;
+  padding: .2em;
+  box-shadow: 0 0 0 .1em rgba(255, 255, 255, 0.3) inset;
+}
+.logon .forms>input.wrong {
+  background-color: #E77;
+}
+.logon .forms>input:nth-of-type(1) {
+  border-top-left-radius: .2em;
+  border-right: 0;
+}
+.logon .forms>input:nth-of-type(2) {
+  border-bottom-left-radius: .2em;
+  border-top: 0; border-right: 0;
+}
+.logon input[type="submit"] {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.5em;
+  color: rgba(0, 0, 0, 0.6);
+  width: 2em; height: 3.3em;
+  background-color: #3D801C;
+  border: .1em solid #25530E;
+  border-radius: 0 .2em .2em 0;
+  box-shadow: 0 0 0 .1em rgba(255, 255, 255, 0.3) inset; /*box-shadow: 0 0 0 .1em #72A758 inset;*/
+
+  transition: color .2s ease;
+}
+.logon input[type="submit"]:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+
+nav {
+  position: absolute;
+  top: 0; left: 0; bottom: 0;
+  width: 20em;
+}
+
+nav .bg {
+  position: fixed;
+  top: 0; left: 0; bottom: 0;
+  width: 20em;
+  z-index: -1;
+
+  background-color: hsl(100, 40%, 40%);
+  box-shadow: 0 0 1em #000;
+}
+
+@media (max-width: 50em) {
+  body.panelPage {
+    margin-left: 0;
+    margin-top: 5em;
+  }
+  nav {
+    width: 100%;
+    height: 3em;
+    overflow: hidden;
+
+    background-color: hsl(100, 40%, 40%);
+    box-shadow: 0 0 1em #000;
+  }
+  nav .logotype {
+    font-size: 1em;
+    margin: .3em 0 .2em 0;
+    color: #FFF;
+    text-shadow: 0 0 .3em #000, 0 0 .05em #000;
+  }
+  nav .bg {
+    display: none;
+  }
+}
+
+nav hr {
+  border: 0.15em solid rgba(255, 255, 255, 0.3);
+  height: 0.40em;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin: .4em 1em;
+}
+
+.alert, .pixframe, .menu-elm {
+  box-shadow: 0 0 0 .15em rgba(255, 255, 255, 0.2) inset;
+  border: .15em solid rgba(0, 0, 0, .5);
+  margin: .2em;
+}
+
+.menu-elm {
+  color: #EEE;
+  overflow: hidden;
+  transition: background-color .2s ease-out;
+}
+
+.alert, .pixframe, .menu-elm .head, .menu-elm .more {
+  padding: .2em .4em;
+}
+
+.menu-elm .more {
+  width: 100%;
+  background-color: rgba(0, 0, 0, .3);
+}
+
+.menu-elm .more ul {
+  margin: 0;
+  padding: 0;
+}
+
+.menu-elm .more ul>li {
+  padding: 0;
+  margin-left: .3em;
+  list-style: none;
+}
+
+.menu-elm .more ul>li:before {
+  content: "▹";
+  padding-right: .5em;
+}
+
+.menu-elm .more ul>li.active:before {
+  content: "▸";
+}
+
+nav>a, nav>a .menu-elm {
+  text-decoration: none;
+}
+
+nav>a.underline {
+  text-decoration: underline;
+}
+
+a .menu-elm:hover {
+  background-color: rgba(255, 255, 255, .2);
+}
+
+.right {
+  float: right;
+}
+
+.text-right {
+  text-align: right;
+}
+
+main {
+  background: #FFF;
+  color: #111;
+  padding: 1em;
+  margin: 1em;
+  box-shadow: 0 0 1em .2em #000, 0 0 0 .2em #EEE inset, 0 0 0 .4em rgba(0, 0, 0, 0.25) inset;
+}
+
+.small-info {
+  font-size: 70%;
+  color: #DDD;
+  margin: .5em;
+}
+
+.menu-elm a, .menu-elm a:visited, .small-info a, .small-info a:visited {
+  color: #DDD;
+}
+
+.alert-success {
+  background: hsl(100, 80%, 80%);
+}
+.alert-info {
+  background: hsl(160, 80%, 80%);
+}
+.alert-warning {
+  background: hsl(50, 80%, 80%);
+}
+.alert-danger {
+  background: hsl(0, 80%, 80%);
+}
+
+
+main h1, main h2, main h3, main h4, main h5, main h6 {
+  margin: 0 0 0 .25em;
+}
+
+main h1:after {
+  margin: 0 0 0 -.25em;
+  content: ' ';
+  display: block;
+  border: .05em solid rgba(0, 0, 0, 0.3);
+}
+
+/* Account overview */
+table.accoverview {
+  box-shadow: 0 0 .5em 0 rgba(0, 0, 0, 0.5);
+}
+
+table.accoverview th, table.accoverview td {
+  padding: .2em;
+  border: .15em solid rgba(0, 0, 0, 0.5);
+}
+
+table.accoverview th {
+  background-color: rgba(88, 142, 61, 0.4);
+}
